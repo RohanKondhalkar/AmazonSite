@@ -245,110 +245,104 @@ ul a{
   
     background-repeat: no-repeat;
 }/* Global Responsive Adjustments */
+/* General Adjustments for Large Screens */
 @media (max-width: 1200px) {
     .nav-search {
-        width: 400px;
+        width: 380px;
     }
-
     .box {
         width: 30%;
     }
 }
 
+/* Medium Screens */
 @media (max-width: 992px) {
     .navbar {
         flex-wrap: wrap;
-        justify-content: center;
+        padding: 10px;
     }
-
-    .nav-logo {
-        margin-bottom: 10px;
-    }
-
     .nav-search {
-        width: 80%;
+        width: 100%;
         margin: 10px 0;
     }
-
     .panel {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        padding: 10px;
-        text-align: center;
+        padding: 10px 0;
     }
-
     .panel-ops {
         width: 100%;
+        text-align: center;
         font-size: 12px;
     }
 }
 
+/* Small Screens */
 @media (max-width: 768px) {
-    .box {
-        width: 45%;
-        margin-bottom: 10px;
-    }
-
-    .shop-section {
-        padding: 10px;
-    }
-
     .hero-section {
         height: 250px;
+        background-size: cover;
     }
-
     .hero-text {
         font-size: 0.75rem;
-        height: auto;
-        padding: 5px;
+        padding: 10px;
+        text-align: center;
     }
-}
-
-@media (max-width: 576px) {
-    .nav-search {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .search-input {
-        margin: 5px 0;
-    }
-
     .box {
-        width: 90%;
-        margin: 10px 0;
+        width: 48%;
     }
-
-    .panel-deal {
-        font-size: 16px;
-    }
-
-    .panel-ops p {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .foot-panel2 {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    ul {
-        margin: 10px 0;
-    }
-
-    ul a {
+    .footer {
         font-size: 0.8rem;
     }
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    ul {
+        margin: 10px;
+    }
 }
 
-@media (max-width: 400px) {
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+    .nav-search {
+        flex-direction: column;
+        width: 90%;
+    }
+    .search-input {
+        margin-bottom: 5px;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .hero-section {
+        height: 200px;
+    }
     .hero-text {
         font-size: 0.7rem;
     }
+}
 
+/* Ultra Small Screens */
+@media (max-width: 400px) {
+    .nav-search {
+        width: 100%;
+    }
     .box {
         width: 100%;
+    }
+    .hero-text {
+        font-size: 0.65rem;
     }
 }
